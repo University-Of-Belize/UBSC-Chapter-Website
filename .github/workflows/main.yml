@@ -37,8 +37,17 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           # Add the server to known hosts to avoid the prompt
           ssh-keyscan -p 7822 ubsc.hosting2.acm.org >> ~/.ssh/known_hosts
+          # Start the SSH agent and add the key
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/id_rsa
+          # Debugging: Check if the key is added
+          ssh-add -l
         shell: bash
 
+      # Test SSH Connection
+      - name: Test SSH Connection
+        run: |
+          ssh -p 7822 ubschosting@ubsc.hosting2.acm.org "echo 'SSH Connection Successful'"
       # Write Sentry resource file
       #- name: Write Sentry resource file
       #  run: echo $SENTRY_AUTH_TOKEN >> sentry_token.txt
