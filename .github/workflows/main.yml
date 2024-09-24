@@ -1,4 +1,4 @@
-name: SvelteKit Deploy (Staging)
+name: (main) Deploy to service provider
 
 on:
   schedule:
