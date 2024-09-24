@@ -61,6 +61,8 @@ jobs:
          npm install
          npm run build
          # Ensure the REPO_URL is an SSH URL and clone the remote repository
+         git config --global user.name "ubschosting"
+         git config --global user.email "ubschosting@ubsc.hosting2.acm.org"
          git clone $REPO_URL app
          cd app
          mv .git ../build
