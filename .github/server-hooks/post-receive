@@ -9,6 +9,8 @@ echo "You can either safely press CTRL+C or wait for this to complete"
 
 echo "[STEP 1/5]: Resetting tree to HEAD"
 git reset --hard
+git reflog expire --expire=all --all
+git gc --prune=now --aggressive
 
 echo "[STEP 2/5]: Installing dependencies in the background..."
 npm install &  # Run npm install in the background
