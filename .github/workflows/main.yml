@@ -60,6 +60,9 @@ jobs:
         run: | 
          npm install
          npm run build
+         # Destroy sourcemaps
+         echo "Destroying sourcemaps"
+         find ./build -type f -name "*.map" -exec rm -rf {} \;;
          # Ensure the REPO_URL is an SSH URL and clone the remote repository
          git config --global user.name "ubschosting"
          git config --global user.email "ubschosting@ubsc.hosting2.acm.org"
