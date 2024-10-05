@@ -6,9 +6,7 @@
 
 <page class="inline-flex flex-col items-center gap-32 w-full h-full">
 	<PublicNav />
-	<main class="flex flex-col items-center gap-16 self-stretch">
+	<main class="flex flex-col items-center gap-16 self-stretch mx-2 lg:mx-20">
 		<SectionOne />
-		<h1 class="text-4xl">ShadCN Test</h1>
-		<Button>Click me</Button>
 	</main>
 </page>
