@@ -1,5 +1,6 @@
 <!-- Description: Navigation bar for the public pages of the website. -->
 <script lang="ts">
+	import EnvelopeOpen from 'svelte-radix/EnvelopeOpen.svelte';
 	import { Button } from '$lib/vendor/shadcn/components/ui/button';
 </script>
 
@@ -19,5 +20,8 @@
 		<div>PROJECTS</div>
 		<div>CONTACT</div>
 	</div>
-	<Button class="bg-sky-500 hover:bg-sky-600">Login with Email</Button>
+	<Button class="bg-sky-500 hover:bg-sky-600">
+		<EnvelopeOpen class="mr-2 h-4 w-4" />
+		<span>Login with Email</span>
+	</Button>
 </component>
