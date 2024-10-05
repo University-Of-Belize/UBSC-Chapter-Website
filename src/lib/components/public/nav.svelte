@@ -7,7 +7,7 @@
 </script>
 
 <component
-	class="flex text-slate-50 bg-sky-950 justify-between items-center px-4 lg:px-20 xl:px-96 py-2 w-full"
+	class="flex text-slate-50 bg-sky-950 justify-between items-center px-4 lg:px-20 xl:px-80 py-2 w-full"
 >
 	<Logo mode="dark" />
 	<NavigationLinks />
