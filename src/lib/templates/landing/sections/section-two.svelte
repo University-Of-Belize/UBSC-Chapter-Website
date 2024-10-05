@@ -14,8 +14,8 @@
 		>
 			<preload class="hidden text-3xl" />
 			<Activity size="text-3xl" data={{ title: 'Global members', number: '100,000+' }} />
-			<Activity size="text-3xl" data={{ title: 'Professional chapters', number: '180+' }} />
-			<Activity size="text-3xl" data={{ title: 'Student chapters', number: '680+' }} />
+			<Activity center size="text-3xl" data={{ title: 'Professional chapters', number: '180+' }} />
+			<Activity center size="text-3xl" data={{ title: 'Student chapters', number: '680+' }} />
 		</HeroBlock>
 	</div>
 	<AspectRatio ratio={16 / 9} class="bg-muted">
