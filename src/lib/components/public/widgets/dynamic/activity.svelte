@@ -16,9 +16,9 @@
 	export let center: boolean = false;
 </script>
 
-<preload class="hidden text-5xl text-center" />
+<preload class="hidden text-5xl text-center md:text-left" />
 <component
-	class="flex flex-col {center ? 'text-center' : ''} justify-center items-center w-fit gap-0.5"
+	class="flex flex-col text-center {center ? 'md:text-center' : 'md:text-left'} justify-center items-center w-full md:w-fit gap-0.5"
 >
 	<div class="font-extralight {size ? size : 'text-5xl'} text-sky-500 w-full">
 		{data.number}

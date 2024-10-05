@@ -6,7 +6,7 @@
 	import Activity from '$lib/components/public/widgets/dynamic/activity.svelte';
 </script>
 
-<assembly class="flex justify-between items-start gap-20">
+<assembly class="flex flex-col lg:flex-row justify-between items-start gap-20">
 	<div class="w-11/12">
 		<HeroBlock
 			text_light_blue="Belize's"

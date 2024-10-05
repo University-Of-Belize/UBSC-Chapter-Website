@@ -13,9 +13,9 @@
 </script>
 
 <component
-	class="flex justify-between items-center gap-42 self-stretch bg-slate-50 w-full lg:px-20 xl:px-80 py-12"
+	class="flex flex-col-reverse lg:flex-row justify-between items-center gap-42 self-stretch bg-slate-50 w-full lg:px-20 xl:px-80 py-12"
 >
-	<div class="flex flex-col items-start gap-8 w-1/2">
+	<div class="flex flex-col items-start gap-8 w-3/4 lg:w-1/2 pt-12">
 		<Logo />
 
 		<article

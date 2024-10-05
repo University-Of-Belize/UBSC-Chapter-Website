@@ -5,10 +5,11 @@
 	import { AspectRatio } from '$lib/vendor/shadcn/components/ui/aspect-ratio/index.js';
 </script>
 
-<assembly class="flex justify-between items-start gap-20">
+<assembly class="flex flex-col lg:flex-row justify-between items-start gap-20">
 	<div class="w-11/12">
 		<HeroBlock
 			no_signup
+			activities_column_on_mobile
 			text="Who are we?"
 			subtitle="The Association for Computing Machinery (ACM) is the world's largest scientific and educational computing society. The University of Belize’s chapter of the ACM is only the second Student Chapter in Central America, and a part of the growing ACM network. The ACM offers members the opportunity to be an active part of the association by organizing activities such as technical talks, forums, field trips, and programming contests."
 		>
