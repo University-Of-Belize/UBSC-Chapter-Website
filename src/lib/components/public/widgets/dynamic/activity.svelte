@@ -11,10 +11,13 @@
 		link: '/activity-link',
 		linkText: 'Learn More'
 	};
+
+	export let size: string = '';
 </script>
 
-<component class="flex flex-col justify-center items-center w-fit gap-0.5">
-	<div class="font-extralight text-5xl text-sky-500 w-full">
+<preload class="hidden text-5xl" />
+<component class="flex flex-col text-center justify-center items-center w-fit gap-0.5">
+	<div class="font-extralight {size ? size : 'text-5xl'} text-sky-500 w-full">
 		{data.number}
 	</div>
 	<div class="text-xl font-medium text-slate-800 w-full">

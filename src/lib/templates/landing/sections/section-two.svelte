@@ -12,9 +12,10 @@
 			text="Who are we?"
 			subtitle="The Association for Computing Machinery (ACM) is the world's largest scientific and educational computing society. The University of Belize’s chapter of the ACM is only the second Student Chapter in Central America, and a part of the growing ACM network. The ACM offers members the opportunity to be an active part of the association by organizing activities such as technical talks, forums, field trips, and programming contests."
 		>
-			<Activity data={{ title: 'Global members', number: '100,000+' }} />
-			<Activity data={{ title: 'Professional chapters', number: '180+' }} />
-			<Activity data={{ title: 'Student chapters', number: '680+' }} />
+			<preload class="hidden text-3xl" />
+			<Activity size="text-3xl" data={{ title: 'Global members', number: '100,000+' }} />
+			<Activity size="text-3xl" data={{ title: 'Professional chapters', number: '180+' }} />
+			<Activity size="text-3xl" data={{ title: 'Student chapters', number: '680+' }} />
 		</HeroBlock>
 	</div>
 	<AspectRatio ratio={16 / 9} class="bg-muted">
