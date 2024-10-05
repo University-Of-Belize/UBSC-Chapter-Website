@@ -7,7 +7,7 @@
 
 <page class="inline-flex flex-col items-center gap-32 w-full h-full">
 	<PublicNav />
-	<main class="flex flex-col items-center gap-48 self-stretch mx-2 lg:mx-20">
+	<main class="flex flex-col items-center gap-48 self-stretch mx-2 lg:mx-20 xl:mx-96">
 		<SectionOne />
 		<SectionTwo />
 	</main>
