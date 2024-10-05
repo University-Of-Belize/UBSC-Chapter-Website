@@ -2,24 +2,15 @@
 <script lang="ts">
 	import EnvelopeOpen from 'svelte-radix/EnvelopeOpen.svelte';
 	import { Button } from '$lib/vendor/shadcn/components/ui/button';
+	import Logo from '$lib/components/global/branding/logo.svelte';
+	import NavigationLinks from '$lib/components/global/navigation/navigation-links.svelte';
 </script>
 
 <component
 	class="flex text-slate-50 bg-sky-950 justify-between items-center px-4 lg:px-20 py-2 w-full"
 >
-	<div class="nav-logo flex items-center gap-1">
-		<img src="/landing/stock/acm_chapter_light.png" alt="ACM Chapter Logo" width="40px" />
-		<div class="font-thin text-lg">UBACM</div>
-	</div>
-	<div
-		class="hidden nav-links text-sm w-fit uppercase md:flex items-center gap-4 text-md font-light"
-	>
-		<div>ABOUT US</div>
-		<div>GROUPS</div>
-		<div>COMMITEES</div>
-		<div>PROJECTS</div>
-		<div>CONTACT</div>
-	</div>
+	<Logo mode="dark" />
+	<NavigationLinks />
 	<Button class="bg-sky-500 hover:bg-sky-600">
 		<EnvelopeOpen class="mr-2 h-4 w-4" />
 		<span>Login with Email</span>

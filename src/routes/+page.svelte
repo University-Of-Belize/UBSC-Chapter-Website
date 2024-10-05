@@ -2,6 +2,7 @@
 	import PublicNav from '$lib/components/public/nav.svelte';
 	import SectionOne from '$lib/templates/landing/sections/section-one.svelte';
 	import SectionTwo from '$lib/templates/landing/sections/section-two.svelte';
+	import Footer from '$lib/components/global/footer.svelte';
 </script>
 
 <page class="inline-flex flex-col items-center gap-32 w-full h-full">
@@ -10,4 +11,5 @@
 		<SectionOne />
 		<SectionTwo />
 	</main>
+	<Footer/>
 </page>
